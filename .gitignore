@@ -189,3 +189,5 @@ thumb
 sketch
 
 .~lock.*
+/heatmap_images/
+heatmap_animation.gif
