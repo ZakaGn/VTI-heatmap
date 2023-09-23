@@ -2,7 +2,7 @@
 
 import pandas as pd
 import os
-from settings import gtfs_dir
+from settings import GTFS_DIR
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', 1000)
@@ -11,34 +11,34 @@ pd.set_option('display.width', 1000)
 
 
 def explore_files():
-	agency_df = pd.read_csv(os.path.join(gtfs_dir, "agency.txt"))
+	agency_df = pd.read_csv(os.path.join(GTFS_DIR, "agency.txt"))
 	print("agency_df:")
 	print(agency_df)
 
-	calendar_dates_df = pd.read_csv(os.path.join(gtfs_dir, "calendar_dates.txt"))
+	calendar_dates_df = pd.read_csv(os.path.join(GTFS_DIR, "calendar_dates.txt"))
 	print("calendar_dates_df:")
 	print(calendar_dates_df)
 
-	calendar_df = pd.read_csv(os.path.join(gtfs_dir, "calendar.txt"))
+	calendar_df = pd.read_csv(os.path.join(GTFS_DIR, "calendar.txt"))
 	print("calendar_df:")
 	print(calendar_df)
 
-	routes_df = pd.read_csv(os.path.join(gtfs_dir, "routes.txt"))
+	routes_df = pd.read_csv(os.path.join(GTFS_DIR, "routes.txt"))
 	print("routes_df:")
 	print(routes_df)
 
-	shapes_df = pd.read_csv(os.path.join(gtfs_dir, "shapes.txt"))
+	shapes_df = pd.read_csv(os.path.join(GTFS_DIR, "shapes.txt"))
 	print("shapes_df:")
 	print(shapes_df)
 
-	stop_times_df = pd.read_csv(os.path.join(gtfs_dir, "stop_times.txt"))
+	stop_times_df = pd.read_csv(os.path.join(GTFS_DIR, "stop_times.txt"))
 	print("stop_times_df:")
 	print(stop_times_df)
 
-	trips_df = pd.read_csv(os.path.join(gtfs_dir, "trips.txt"))
+	trips_df = pd.read_csv(os.path.join(GTFS_DIR, "trips.txt"))
 	print("trips_df:")
 	print(trips_df)
 
-	stops_df = pd.read_csv(os.path.join(gtfs_dir, "stops.txt"))
+	stops_df = pd.read_csv(os.path.join(GTFS_DIR, "stops.txt"))
 	print("stops_df:")
 	print(stops_df)
